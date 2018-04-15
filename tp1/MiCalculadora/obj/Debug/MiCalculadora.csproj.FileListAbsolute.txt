@@ -1,0 +1,13 @@
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\bin\Debug\MiCalculadora.exe
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\bin\Debug\MiCalculadora.pdb
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\obj\Debug\MiCalculadora.csprojResolveAssemblyReference.cache
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\obj\Debug\MiCalculadora.exe
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\obj\Debug\MiCalculadora.pdb
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\bin\Debug\ClassLibrary1.dll
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\bin\Debug\ClassLibrary1.pdb
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\MiCalculadora\obj\Debug\MiCalculadora.LaCalculadora.resources

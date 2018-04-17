@@ -155,7 +155,7 @@ namespace ClasesCalculadora
         {
             string auxString = "Valor invalido";
 
-            if (aConvertir >= 0 && (aConvertir - (int)aConvertir) == 0)
+            if (aConvertir > 0 && (aConvertir - (int)aConvertir) == 0)
             {
                 auxString = "";
 
@@ -172,6 +172,10 @@ namespace ClasesCalculadora
 
                     aConvertir = (int)aConvertir / 2;
                 }
+            }
+            else if (aConvertir == 0)
+            {
+                auxString = "0";
             }
             return auxString;
         }

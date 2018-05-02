@@ -1,0 +1,11 @@
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\emili\Documents\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+E:\Emilio\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+E:\Emilio\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+E:\Emilio\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+E:\Emilio\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+E:\Emilio\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\obj\Debug\Calculadora.csprojResolveAssemblyReference.cache
+E:\Emilio\UtnFra\Prog-Lab II\tp_lab_2\tp1\ClassLibrary1\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache

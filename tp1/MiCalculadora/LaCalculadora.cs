@@ -14,14 +14,9 @@ namespace MiCalculadora
     public partial class LaCalculadora : Form
     {
         public LaCalculadora()
-        {
-            InitializeComponent();
-        }
+        { InitializeComponent(); }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void Form1_Load(object sender, EventArgs e) { }
 
         /// <summary>
         /// Cierra el formulario
@@ -29,9 +24,7 @@ namespace MiCalculadora
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        { this.Close(); }
 
         /// <summary>
         /// Limpia los labeles, textbox y el combobox
@@ -39,9 +32,7 @@ namespace MiCalculadora
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            this.Limpiar();
-        }
+        { this.Limpiar(); }
 
         /// <summary>
         /// Limpia los labeles, textbox y el combobox
@@ -90,9 +81,7 @@ namespace MiCalculadora
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
-        {
-            this.lblResultado.Text = Numero.DecimalBinario(this.lblResultado.Text);
-        }
+        { this.lblResultado.Text = Numero.DecimalBinario(this.lblResultado.Text); }
 
         /// <summary>
         /// Conversor a decimal
@@ -100,8 +89,6 @@ namespace MiCalculadora
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
-        {
-            this.lblResultado.Text = Numero.BinarioDecimal(this.lblResultado.Text);
-        }
+        { this.lblResultado.Text = Numero.BinarioDecimal(this.lblResultado.Text); }
     }
 }

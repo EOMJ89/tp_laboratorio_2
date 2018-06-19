@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
+using ClasesPrincipales;
 
 namespace SimuladorForm
 {
@@ -152,7 +153,7 @@ namespace SimuladorForm
                 else if (elemento is Paquete)
                 { this.rtbMostrar.Text = ((Paquete)elemento).ToString(); }
 
-                GuardaString.Guardar(this.rtbMostrar.Text, "salida");
+                this.rtbMostrar.Text.Guardar("salida");
             }
         }
         #endregion

@@ -57,8 +57,6 @@ namespace SimuladorForm
             }
             catch (TrackingIDRepetidoException trackingIDRepetidoException)
             { MessageBox.Show(trackingIDRepetidoException.Message.ToString(), "Alerta", MessageBoxButtons.OK); }
-            catch (Exception otherException)
-            { MessageBox.Show("Error con la base de Datos", "Alerta", MessageBoxButtons.OK); }
         }
 
         /// <summary>
@@ -88,7 +86,7 @@ namespace SimuladorForm
         private void lstEstadoEntregado_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
-            { this.mostrarToolStripMenuItem.Show(MousePosition.X, MousePosition.Y); }
+            { this.mostrarToolStripMenuItem.Show(Cursor.Position.X, Cursor.Position.Y); }
         }
         #endregion
 
@@ -120,6 +118,20 @@ namespace SimuladorForm
                     default:
                         break;
                 }
+            }
+
+            this.CheckearShareData();
+        }
+
+        /// <summary>
+        /// Se encarga de mostrar los Paquetes que tuvieron error al enviarse a la base de datos
+        /// </summary>
+        private void CheckearShareData()
+        {
+            foreach (Paquete paqueteA in this.lstEstadoEntregado.Items)
+            {
+                if (paqueteA.ShareData == false)
+                { MessageBox.Show("Error al conectarse con la Base de Datos\nPaquete: " + paqueteA.ToString(), "Alerta", MessageBoxButtons.OK); }
             }
         }
 

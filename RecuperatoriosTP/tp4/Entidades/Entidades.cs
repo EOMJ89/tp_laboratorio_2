@@ -27,6 +27,7 @@ namespace Entidades
         private string _direccionEntrega;
         private EEstado _estado;
         private string _trackingID;
+        private Boolean _shareData;
 
         #region "Propiedades"
         /// <summary>
@@ -56,6 +57,12 @@ namespace Entidades
             set { this._trackingID = value; }
         }
 
+        /// <summary>
+        /// ShareData: Propiedad utilizada para manejar la interacción con base de datos
+        /// </summary>
+        public Boolean ShareData
+        { get { return this._shareData; } }
+
         #endregion
 
         #region "Constructor"
@@ -69,6 +76,7 @@ namespace Entidades
             this.DireccionEntrega = direccionEntrega;
             this.TrackingID = trackingID;
             this.Estado = EEstado.Ingresado;
+            this._shareData = false;
         }
         #endregion
 
@@ -87,9 +95,12 @@ namespace Entidades
             } while (this.Estado != EEstado.Entregado);
 
             try
-            { PaqueteDAO.Insert(this); }
+            {
+                PaqueteDAO.Insert(this);
+                this._shareData = true;
+            }
             catch (Exception e)
-            { throw e; }
+            { this._shareData = false; }
         }
 
         /// <summary>

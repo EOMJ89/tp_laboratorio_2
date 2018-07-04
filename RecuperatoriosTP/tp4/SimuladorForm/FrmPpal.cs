@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades;
 using ClasesPrincipales;
 
 namespace SimuladorForm
@@ -113,25 +112,13 @@ namespace SimuladorForm
                         this.lstEstadoEnViaje.Items.Add(paqueteA);
                         break;
                     case Paquete.EEstado.Entregado:
-                        this.lstEstadoEntregado.Items.Add(paqueteA);
-                        break;
+                        {
+                            this.lstEstadoEntregado.Items.Add(paqueteA);
+                            break;
+                        }
                     default:
                         break;
                 }
-            }
-
-            this.CheckearShareData();
-        }
-
-        /// <summary>
-        /// Se encarga de mostrar los Paquetes que tuvieron error al enviarse a la base de datos
-        /// </summary>
-        private void CheckearShareData()
-        {
-            foreach (Paquete paqueteA in this.lstEstadoEntregado.Items)
-            {
-                if (paqueteA.ShareData == false)
-                { MessageBox.Show("Error al conectarse con la Base de Datos\nPaquete: " + paqueteA.ToString(), "Alerta", MessageBoxButtons.OK); }
             }
         }
 

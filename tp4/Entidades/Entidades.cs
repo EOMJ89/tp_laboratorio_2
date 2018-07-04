@@ -27,6 +27,7 @@ namespace Entidades
         private string _direccionEntrega;
         private EEstado _estado;
         private string _trackingID;
+        private string _shareData;
 
         #region "Propiedades"
         /// <summary>
@@ -56,6 +57,12 @@ namespace Entidades
             set { this._trackingID = value; }
         }
 
+        /// <summary>
+        /// ShareData: usado para determinar si se logró guardar en base de datos
+        /// </summary>
+        public string ShareData
+        { get { this._shareData; } }
+
         #endregion
 
         #region "Constructor"
@@ -69,6 +76,7 @@ namespace Entidades
             this.DireccionEntrega = direccionEntrega;
             this.TrackingID = trackingID;
             this.Estado = EEstado.Ingresado;
+            this._shareData = "aGuardar";
         }
         #endregion
 
@@ -79,6 +87,7 @@ namespace Entidades
         /// </summary>
         public void MockCicloDeVida()
         {
+
             do
             {
                 Thread.Sleep(10000);
@@ -87,9 +96,12 @@ namespace Entidades
             } while (this.Estado != EEstado.Entregado);
 
             try
-            { PaqueteDAO.Insert(this); }
+            {
+                PaqueteDAO.Insert(this);
+                this._shareData = "guardado";
+            }
             catch (Exception e)
-            { throw e; }
+            { this._shareData = "noguardado"; }
         }
 
         /// <summary>
@@ -270,10 +282,9 @@ namespace Entidades
 
             if (cAux != p1)
             {
-                cAux.Paquetes.Add(p1);
-
                 try
                 {
+                    cAux.Paquetes.Add(p1);
                     Thread hiloP1 = new Thread(p1.MockCicloDeVida);
                     cAux._mockPaquetes.Add(hiloP1);
                     hiloP1.Start();
